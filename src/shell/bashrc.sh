@@ -4,3 +4,11 @@
 if [ `uname | grep ^Darwin` ]; then
 	alias ls="ls -G"
 fi
+
+cd_and_ls() {
+	cd $1
+	ls
+}
+
+alias cd="cd_and_ls"
+

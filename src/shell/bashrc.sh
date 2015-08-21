@@ -7,7 +7,7 @@ fi
 
 # cd into a dir, and then ls
 cd_and_ls() {
-	cd $1 && ls
+	cd "$@" && ls
 }
 alias cd="cd_and_ls"
 
